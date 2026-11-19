@@ -54,3 +54,6 @@ kotlin {
 dependencies {
     implementation(project(":core:contracts"))
 }
+
+tasks.register("prepareKotlinBuildScriptModel") {
+}
