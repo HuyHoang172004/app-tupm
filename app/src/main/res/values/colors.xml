@@ -1,0 +1,7 @@
+<resources>
+    <color name="page_background">#F3F6F4</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="ink">#18332B</color>
+    <color name="muted_ink">#60716B</color>
+    <color name="brand">#147D5A</color>
+</resources>

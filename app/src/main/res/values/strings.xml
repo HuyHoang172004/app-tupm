@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LiteTravel</string>
+    <string name="app_tagline">Cẩm nang du lịch địa phương</string>
+    <string name="build_configuration">Cấu hình bản build</string>
+    <string name="r8_label">R8 và resource shrinking</string>
+    <string name="optimization_enabled">Đang bật</string>
+    <string name="optimization_disabled">Đang tắt</string>
+    <string name="version_label">Phiên bản</string>
+    <string name="places_heading">Khám phá địa phương</string>
+    <string name="places_intro">Thông tin cơ bản luôn có sẵn trong ứng dụng.</string>
+    <string name="place_one_title">Điểm đến mẫu</string>
+    <string name="place_one_description">Mô tả ngắn về điểm đến sẽ được nhóm bổ sung theo địa phương đã chọn.</string>
+    <string name="optional_features_heading">Tính năng mở rộng</string>
+    <string name="optional_features_intro">Các nội dung này sẽ được tải riêng theo yêu cầu.</string>
+    <string name="gallery_title">Thư viện ảnh</string>
+    <string name="gallery_description">Ảnh chất lượng cao của các điểm đến.</string>
+    <string name="audio_guide_title">Thuyết minh audio</string>
+    <string name="audio_guide_description">Nghe giới thiệu về các địa điểm.</string>
+    <string name="itinerary_title">Lịch trình tham khảo</string>
+    <string name="itinerary_description">Gợi ý lịch trình khám phá theo chủ đề.</string>
+    <string name="food_title">Đặc sản địa phương</string>
+    <string name="food_description">Tìm hiểu món ăn và đặc sản nổi bật.</string>
+    <string name="feature_pending">Chờ tích hợp module</string>
+</resources>
