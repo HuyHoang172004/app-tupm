@@ -119,7 +119,9 @@ class MainActivity : Activity() {
     ) {
         installFeature = install
         openFeature = open
-        featureStates.forEach(::renderFeatureState)
+        featureStates.forEach { (moduleName, state) ->
+            renderFeatureState(moduleName, state)
+        }
     }
 
     private fun bindFeatureCards() {
