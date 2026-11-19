@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/page_background"
+    android:fitsSystemWindows="true"
     android:fillViewport="true">
 
     <LinearLayout
@@ -53,6 +55,23 @@
 
             <TextView
                 android:id="@+id/optimization_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/brand"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/resource_shrinking_label"
+                android:textColor="@color/muted_ink"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/resource_shrinking_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -138,9 +157,17 @@
             android:textColor="@color/muted_ink"
             android:textSize="14sp" />
 
-        <include layout="@layout/feature_placeholder_gallery" />
-        <include layout="@layout/feature_placeholder_audio" />
-        <include layout="@layout/feature_placeholder_itinerary" />
-        <include layout="@layout/feature_placeholder_food" />
+        <include
+            android:id="@+id/gallery_card"
+            layout="@layout/feature_card" />
+        <include
+            android:id="@+id/audio_guide_card"
+            layout="@layout/feature_card" />
+        <include
+            android:id="@+id/itinerary_card"
+            layout="@layout/feature_card" />
+        <include
+            android:id="@+id/food_card"
+            layout="@layout/feature_card" />
     </LinearLayout>
 </ScrollView>

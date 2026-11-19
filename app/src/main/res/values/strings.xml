@@ -3,6 +3,7 @@
     <string name="app_tagline">Cẩm nang du lịch địa phương</string>
     <string name="build_configuration">Cấu hình bản build</string>
     <string name="r8_label">R8 và resource shrinking</string>
+    <string name="resource_shrinking_label">Resource shrinking</string>
     <string name="optimization_enabled">Đang bật</string>
     <string name="optimization_disabled">Đang tắt</string>
     <string name="version_label">Phiên bản</string>
@@ -20,5 +21,17 @@
     <string name="itinerary_description">Gợi ý lịch trình khám phá theo chủ đề.</string>
     <string name="food_title">Đặc sản địa phương</string>
     <string name="food_description">Tìm hiểu món ăn và đặc sản nổi bật.</string>
-    <string name="feature_pending">Chờ tích hợp module</string>
+    <string name="feature_not_installed">Chưa cài</string>
+    <string name="feature_pending">Đang chờ</string>
+    <string name="feature_downloading">Đang tải</string>
+    <string name="feature_installing">Đang cài đặt</string>
+    <string name="feature_installed">Đã cài</string>
+    <string name="feature_confirmation">Cần xác nhận tải</string>
+    <string name="feature_failed">Tải thất bại</string>
+    <string name="feature_canceled">Đã hủy tải</string>
+    <string name="feature_action_pending">Chờ kết nối dịch vụ tải</string>
+    <string name="feature_action_install">Tải tính năng</string>
+    <string name="feature_action_open">Mở tính năng</string>
+    <string name="feature_action_retry">Thử lại</string>
+    <string name="feature_progress_format">Đã tải %1$s / %2$s</string>
 </resources>
