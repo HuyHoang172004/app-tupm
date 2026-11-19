@@ -1,0 +1,4 @@
+-keep class vn.demo.liteload.feature.gallery.GalleryActivity { public <init>(); }
+-keep class vn.demo.liteload.feature.audioguide.AudioGuideActivity { public <init>(); }
+-keep class vn.demo.liteload.feature.itinerary.ItineraryActivity { public <init>(); }
+-keep class vn.demo.liteload.feature.food.FoodActivity { public <init>(); }

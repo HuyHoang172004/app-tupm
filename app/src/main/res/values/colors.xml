@@ -4,4 +4,5 @@
     <color name="ink">#18332B</color>
     <color name="muted_ink">#60716B</color>
     <color name="brand">#147D5A</color>
+    <color name="error">#B3261E</color>
 </resources>

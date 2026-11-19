@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/info_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/feature_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ink"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feature_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/muted_ink"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/feature_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/brand"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/feature_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/feature_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/error"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/feature_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:enabled="false"
+        android:minHeight="44dp"
+        android:text="@string/feature_action_pending" />
+</LinearLayout>
