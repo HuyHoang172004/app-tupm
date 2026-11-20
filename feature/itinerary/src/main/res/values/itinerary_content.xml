@@ -1,0 +1,11 @@
+<resources>
+<string name="itinerary_old_town_title">Dạo phố cổ</string>
+<string name="itinerary_old_town_duration">Khoảng 3 giờ · 3 chặng</string>
+<string name="itinerary_old_town_body">Lịch trình tự soạn, thời lượng chỉ là gợi ý cho demo.\n\n1. Dạo quanh khu vực Chùa Cầu: dành thời gian quan sát những mái nhà và cảnh phố.\n\n2. Đi bộ qua các tuyến phố cổ: nghỉ chân khi cần, tôn trọng không gian sinh hoạt của cư dân.\n\n3. Kết thúc ở khu vực bờ sông: ngồi nghỉ và ghi lại những điều bạn thích.\n\nKiểm tra điều kiện tham quan thực tế trước chuyến đi; ứng dụng không cung cấp giá vé hay giờ mở cửa.</string>
+<string name="itinerary_sea_fields_title">Đồng quê và biển</string>
+<string name="itinerary_sea_fields_duration">Khoảng nửa ngày · 3 chặng</string>
+<string name="itinerary_sea_fields_body">Gợi ý demo về cách kết hợp cảnh quan quanh Hội An.\n\n1. Bắt đầu bằng một buổi sáng ở khu vực đồng quê, quan sát ruộng và vườn từ đường đi công cộng.\n\n2. Di chuyển đến An Bàng bằng phương tiện phù hợp với bạn.\n\n3. Dành thời gian nghỉ ở khu vực biển rồi quay về.\n\nKhoảng cách, thời tiết và thời gian di chuyển chưa được ứng dụng tính toán. Hãy điều chỉnh kế hoạch theo điều kiện thực tế.</string>
+<string name="itinerary_flavours_title">Một buổi khám phá hương vị</string>
+<string name="itinerary_flavours_duration">Khoảng 2 giờ · 4 chặng</string>
+<string name="itinerary_flavours_body">Lịch trình do tác giả tự soạn để dùng cùng feature Đặc sản.\n\n1. Xem trước danh sách món trong ứng dụng.\n\n2. Đi bộ qua khu vực chợ, quan sát các quầy đang hoạt động.\n\n3. Chọn một món bạn muốn tìm hiểu, chẳng hạn cao lầu hoặc bánh mì.\n\n4. Nghỉ chân và ghi lại món muốn thử lần sau.\n\nKhông có đặt bàn hay đề xuất cửa hàng thương mại. Hỏi thành phần trước khi gọi món.</string>
+</resources>

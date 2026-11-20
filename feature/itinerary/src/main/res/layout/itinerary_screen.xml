@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+<Button android:id="@+id/itinerary_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/itinerary_back" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/itinerary_heading" android:textSize="26sp" android:textStyle="bold" android:accessibilityHeading="true" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/itinerary_intro" android:paddingBottom="16dp" />
+<FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<ListView android:id="@+id/itinerary_list" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="12dp" />
+<ScrollView android:id="@+id/itinerary_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+<TextView android:id="@+id/itinerary_detail_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" android:paddingTop="12dp" />
+<TextView android:id="@+id/itinerary_detail_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:lineSpacingExtra="6dp" android:paddingTop="12dp" android:textIsSelectable="true" />
+
+</LinearLayout></ScrollView></FrameLayout></LinearLayout>

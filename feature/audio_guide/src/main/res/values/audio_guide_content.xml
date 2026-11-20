@@ -1,0 +1,8 @@
+<resources>
+    <string name="audio_guide_town_title">Phố cổ / The old town</string>
+    <string name="audio_guide_town_body">Welcome to this short, original demo about Hoi An. The old town is known for its historic houses and lanterns. Imagine a quiet walk past yellow walls and tiled roofs. Take your time to notice the small details. This recording is a sample narration, not a guided tour or current visitor information.</string>
+    <string name="audio_guide_river_title">Bên sông / By the river</string>
+    <string name="audio_guide_river_body">Hoi An has a close connection with its riverside. This original demo invites you to picture boats, reflections, and rows of houses near the water. Listen, then open the gallery for our own illustrations. The pictures and this narration are creative examples, rather than a record of a particular place or event.</string>
+    <string name="audio_guide_food_title">Hương vị / Local flavours</string>
+    <string name="audio_guide_food_body">Food is another way to explore Hoi An. Cao lau noodles, banh mi, and white rose dumplings are among the dishes associated with the town. Open the food feature to read our short introductions. Recipes and ingredients vary between kitchens. This original demo does not recommend a restaurant or quote prices.</string>
+</resources>

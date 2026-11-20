@@ -1,0 +1,10 @@
+<resources>
+<string name="food_cao_lau_title">Cao lầu</string>
+<string name="food_cao_lau_body">Món mì gắn với Hội An, thường được phục vụ cùng thịt và rau. Hương vị và cách trình bày khác nhau giữa các quán. Minh họa trong ứng dụng do tác giả tự vẽ.</string>
+<string name="food_banh_mi_title">Bánh mì</string>
+<string name="food_banh_mi_body">Ổ bánh với nhiều loại nhân là một lựa chọn phổ biến khi khám phá phố cổ. Hãy hỏi thành phần và chọn phần nhân phù hợp sở thích của bạn.</string>
+<string name="food_white_rose_title">Bánh bao, bánh vạc</string>
+<string name="food_white_rose_body">Nhóm bánh thường được giới thiệu với tên White Rose ở Hội An. Hình minh họa gợi các nếp bánh trên đĩa, không phải ảnh món ăn thực tế.</string>
+<string name="food_chicken_rice_title">Cơm gà</string>
+<string name="food_chicken_rice_body">Cơm gà là một món thường được nhắc đến trong ẩm thực Hội An. Phần cơm, thịt và rau ăn kèm có thể được trình bày khác nhau tùy nơi.</string>
+</resources>

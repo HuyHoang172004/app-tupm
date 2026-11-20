@@ -10,6 +10,7 @@ val sizeOptimization = providers.gradleProperty("sizeOptimization")
 android {
     namespace = "vn.demo.liteload"
     compileSdk = 36
+    dynamicFeatures += setOf(":feature:gallery", ":feature:audio_guide", ":feature:itinerary", ":feature:food")
 
     defaultConfig {
         applicationId = "vn.demo.liteload"
@@ -53,6 +54,9 @@ kotlin {
 
 dependencies {
     implementation(project(":core:contracts"))
+    implementation(libs.play.feature.delivery)
+    implementation(libs.androidx.activity.ktx)
+    constraints { implementation(libs.androidx.fragment) { because("Activity Result requires a compatible transitive Fragment") } }
 }
 
 tasks.register("prepareKotlinBuildScriptModel") {

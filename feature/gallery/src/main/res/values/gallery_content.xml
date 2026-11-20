@@ -1,0 +1,26 @@
+<resources>
+<string name="gallery_riverside_title">Bên dòng sông</string>
+<string name="gallery_riverside_body">Minh họa một góc bờ sông ở Hội An. Các mảng màu gợi nhịp điệu nhà phố và mặt nước; không mô tả vị trí chính xác.</string>
+<string name="gallery_lanterns_title">Phố đèn lồng</string>
+<string name="gallery_lanterns_body">Minh họa lấy cảm hứng từ những chiếc đèn lồng ở phố cổ. Hãy mở từng hình để xem bố cục rõ hơn.</string>
+<string name="gallery_bridge_title">Dáng Chùa Cầu</string>
+<string name="gallery_bridge_body">Minh họa cách điệu cây cầu có mái, một hình ảnh gắn với Hội An. Đây không phải bản vẽ kiến trúc.</string>
+<string name="gallery_yellow_wall_title">Màu tường vàng</string>
+<string name="gallery_yellow_wall_body">Một bài vẽ về màu tường, mái ngói và bóng nắng trong không gian phố cổ.</string>
+<string name="gallery_balcony_title">Ban công phố nhỏ</string>
+<string name="gallery_balcony_body">Chi tiết ban công và cây xanh được tác giả ghép thành một cảnh minh họa demo.</string>
+<string name="gallery_market_title">Sắc màu khu chợ</string>
+<string name="gallery_market_body">Những mái quầy được vẽ để gợi không khí khu chợ. Không giới thiệu cửa hàng hay giá bán cụ thể.</string>
+<string name="gallery_ricefield_title">Đường qua đồng lúa</string>
+<string name="gallery_ricefield_body">Minh họa vùng đồng quê quanh Hội An, nơi có thể kết hợp vào một chuyến khám phá chậm.</string>
+<string name="gallery_beach_title">Biển An Bàng</string>
+<string name="gallery_beach_body">Một cách thể hiện bờ biển bằng các dải cát, mặt nước và bầu trời. Màu sắc mang tính minh họa.</string>
+<string name="gallery_alley_title">Ngõ nhỏ</string>
+<string name="gallery_alley_body">Bố cục ngõ hẹp lấy cảm hứng từ nhà phố; đây là cảnh do tác giả sáng tác.</string>
+<string name="gallery_boat_title">Thuyền trên sông</string>
+<string name="gallery_boat_body">Hình thuyền và sóng nước minh họa đời sống bên sông, không phải dịch vụ được ứng dụng cung cấp.</string>
+<string name="gallery_roof_title">Nhịp mái ngói</string>
+<string name="gallery_roof_body">Cận cảnh minh họa những lớp mái nhà. Chạm Quay lại để trở về toàn bộ thư viện.</string>
+<string name="gallery_courtyard_title">Khoảng sân xanh</string>
+<string name="gallery_courtyard_body">Một khoảng sân yên tĩnh được vẽ bằng các hình đơn giản, khép lại bộ minh họa về Hội An.</string>
+</resources>

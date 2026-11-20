@@ -1,0 +1,13 @@
+<resources>
+<string name="audio_guide_heading">Nghe chuyện Hội An</string>
+<string name="audio_guide_intro">Thuyết minh demo bằng tiếng Anh, tổng hợp giọng đọc ngoại tuyến</string>
+<string name="audio_guide_back">Quay lại</string>
+<string name="audio_guide_play">Phát / Tiếp tục</string>
+<string name="audio_guide_pause">Tạm dừng</string>
+<string name="audio_guide_stop">Dừng và về đầu</string>
+<string name="audio_guide_ready">Sẵn sàng</string>
+<string name="audio_guide_playing">Đang phát</string>
+<string name="audio_guide_paused">Đã tạm dừng</string>
+<string name="audio_guide_finished">Đã phát xong</string>
+<string name="audio_guide_error">Không thể phát audio. Hãy thử lại.</string>
+</resources>

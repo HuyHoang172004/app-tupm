@@ -19,4 +19,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "LiteTravel"
-include(":app", ":core:contracts")
+include(":app", ":core:contracts", ":feature:gallery", ":feature:audio_guide", ":feature:itinerary", ":feature:food")

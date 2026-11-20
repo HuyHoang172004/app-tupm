@@ -1,6 +1,13 @@
 package vn.demo.liteload
 
-import android.app.Activity
+import androidx.activity.ComponentActivity
+import androidx.activity.result.contract.ActivityResultContracts
+import android.util.Log
+import vn.demo.liteload.core.FeatureId
+import vn.demo.liteload.core.FeatureInstallUpdate
+import vn.demo.liteload.delivery.PlayFeatureInstaller
+import vn.demo.liteload.navigation.FeatureNavigator
+import vn.demo.liteload.navigation.OpenFeatureResult
 import android.os.Bundle
 import android.text.format.Formatter
 import android.view.View
@@ -9,7 +16,49 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import vn.demo.liteload.core.InstallUiState
 
-class MainActivity : Activity() {
+class MainActivity : ComponentActivity() {
+    private lateinit var installer: PlayFeatureInstaller
+    private val confirmationLauncher = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
+        refreshFeatures()
+    }
+    private fun refreshFeatures() {
+        if (::installer.isInitialized) FeatureId.entries.forEach { installer.refresh(it, ::onFeatureUpdate) }
+    }
+    private fun onFeatureUpdate(update: FeatureInstallUpdate) {
+        Log.i("LiteTravelDelivery", "${update.featureId.moduleName}: ${update.state}")
+        renderFeatureState(update.featureId.moduleName, update.state)
+    }
+    private fun featureId(module: String) = FeatureId.entries.first { it.moduleName == module }
+    private fun requestInstall(module: String) {
+        installer.install(featureId(module), confirmationLauncher, ::onFeatureUpdate)
+    }
+    private fun requestOpen(module: String) {
+        val result = FeatureNavigator.open(this, featureId(module))
+        Log.i("LiteTravelDelivery", "OPEN $module: $result")
+        when (result) {
+            OpenFeatureResult.Opened -> Unit
+            OpenFeatureResult.NotInstalled -> installer.refresh(featureId(module), ::onFeatureUpdate)
+            OpenFeatureResult.Failed -> renderFeatureState(module, InstallUiState.Failed(-10005, "Không mở được tính năng. Hãy thử lại."))
+        }
+    }
+    override fun onResume() { super.onResume(); refreshFeatures() }
+    override fun onDestroy() { if (::installer.isInitialized) installer.close(); super.onDestroy() }
+    private fun updateActionAvailability() {
+        val active = featureStates.entries.firstOrNull { (_, state) ->
+            state is InstallUiState.Pending || state is InstallUiState.Downloading ||
+                state is InstallUiState.Installing || state is InstallUiState.RequiresConfirmation
+        }?.key
+        featureViews.forEach { (module, views) ->
+            val state = featureStates[module]
+            views.actionButton.isEnabled = when (state) {
+                InstallUiState.Installed -> openFeature != null
+                InstallUiState.RequiresConfirmation -> module == active && installFeature != null
+                InstallUiState.NotInstalled, InstallUiState.Canceled, is InstallUiState.Failed -> active == null && installFeature != null
+                else -> false
+            }
+        }
+    }
+
     private val featureCards = listOf(
         FeatureCardSpec("gallery", R.id.gallery_card, R.string.gallery_title, R.string.gallery_description),
         FeatureCardSpec("audio_guide", R.id.audio_guide_card, R.string.audio_guide_title, R.string.audio_guide_description),
@@ -35,6 +84,8 @@ class MainActivity : Activity() {
         findViewById<TextView>(R.id.resource_shrinking_status).setText(optimizationLabel)
         findViewById<TextView>(R.id.version_value).text = BuildConfig.VERSION_NAME
         bindFeatureCards()
+        installer = PlayFeatureInstaller(applicationContext)
+        connectFeatureActions(::requestInstall, ::requestOpen)
     }
 
     fun renderFeatureState(moduleName: String, state: InstallUiState) {
@@ -94,7 +145,7 @@ class MainActivity : Activity() {
             InstallUiState.RequiresConfirmation -> {
                 card.status.setText(R.string.feature_confirmation)
                 actionButton.isEnabled = false
-                actionButton.setText(R.string.feature_confirmation)
+                actionButton.setText(R.string.feature_action_retry)
             }
 
             is InstallUiState.Failed -> {
@@ -111,6 +162,7 @@ class MainActivity : Activity() {
                 actionButton.isEnabled = installFeature != null
             }
         }
+        updateActionAvailability()
     }
 
     fun connectFeatureActions(
